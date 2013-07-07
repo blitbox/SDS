@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="raphael.js"></script> 
+<script type="text/javascript" src="jQuery.js"></script> 
+<script type="text/javascript" src="sds.js"></script> 
+
+<script type="text/javascript">
+     $(document).ready(function () {
+
+          var paper = Raphael('canvas_container', 800, 800);
+		  ShowMasterStatus(paper);
+		  showSprinklers(paper);
+		  ShowMasterSwitch(paper);
+
+     });
+</script>
+
+<title>Sprinkler Defense System</title>
+<link rel="stylesheet" href="sds.css">
+
+<style type="text/css">  
+            #canvas_container {  
+                width: 660px;  
+                border: 1px solid #fff;  
+            }  
+</style>
+
+    
+</head>
+
+<body>
+
+
+<div id="drawing" class="canvas">
+</div>
+
+
+<h1>Sprinkler Defense System</h1>
+<p>Press a sprinkler button to test.</p>
+<p>Press master on/off button to disable or enable entire system.</p>
+<p>Time since last event in orange.</p>
+
+<div id="canvas_container"></div> </html>
+</div>	
